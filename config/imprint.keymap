@@ -11,14 +11,12 @@
     chosen { zmk,matrix-transform = &imprint_function_row; };
 
     behaviors {
-
         CAPSWord_v1: CAPSWord_v1 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             bindings = <&kp>, <&caps_word>;
         };
-
 
         HRM_left_index_v1: HRM_left_index_v1 {
             compatible = "zmk,behavior-hold-tap";
@@ -33,7 +31,6 @@
             hold-trigger-on-release;
         };
 
-
         HRM_left_middy_v1: HRM_left_middy_v1 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -46,7 +43,6 @@
             hold-trigger-key-positions = <57 56 55 72 73 74 5 6 7 8 16 17 18 19 20 28 29 30 31 32 40 41 42 43 44 58 59 60 61 62 75 76 77 78 9 21 33 45 63 79 52 53 54 69 70 71>;
             hold-trigger-on-release;
         };
-
 
         HRM_left_pinky_v1: HRM_left_pinky_v1 {
             compatible = "zmk,behavior-hold-tap";
@@ -61,7 +57,6 @@
             hold-trigger-on-release;
         };
 
-
         HRM_left_ring_v1: HRM_left_ring_v1 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -74,7 +69,6 @@
             hold-trigger-key-positions = <57 56 55 72 73 74 5 6 7 8 16 17 18 19 20 28 29 30 31 32 40 41 42 43 44 58 59 60 61 62 75 76 77 78 9 21 33 45 63 79 52 53 54 69 70 71>;
             hold-trigger-on-release;
         };
-
 
         HRM_right_index_v1: HRM_right_index_v1 {
             compatible = "zmk,behavior-hold-tap";
@@ -89,7 +83,6 @@
             hold-trigger-on-release;
         };
 
-
         HRM_right_middy_v1: HRM_right_middy_v1 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -102,7 +95,6 @@
             hold-trigger-key-positions = <52 53 54 71 70 69 0 1 10 11 12 13 14 22 23 24 25 26 27 34 35 36 37 38 39 46 47 48 49 50 51 64 65 66 67 68 15 4 2 3 55 56 57 72 73 74>;
             hold-trigger-on-release;
         };
-
 
         HRM_right_pinky_v1: HRM_right_pinky_v1 {
             compatible = "zmk,behavior-hold-tap";
@@ -117,7 +109,6 @@
             hold-trigger-on-release;
         };
 
-
         HRM_right_ring_v1: HRM_right_ring_v1 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -131,7 +122,6 @@
             hold-trigger-on-release;
         };
 
-
         space_v1: space_v1 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -142,7 +132,6 @@
             quick-tap-ms = <150>;
             retro-tap;
         };
-
 
         thumb_v1: thumb_v1 {
             compatible = "zmk,behavior-hold-tap";
@@ -165,15 +154,12 @@
     };
 
     macros {
-
-
         cur_COPY_v1: cur_COPY_v1 {
             label = "&CUR_COPY_V1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(C)>;
         };
-
 
         cur_CUT_v1: cur_CUT_v1 {
             label = "&CUR_CUT_V1";
@@ -182,14 +168,12 @@
             bindings = <&kp LC(X)>;
         };
 
-
         cur_PASTE_v1: cur_PASTE_v1 {
             label = "&CUR_PASTE_V1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(V)>;
         };
-
 
         cur_UNDO_v1: cur_UNDO_v1 {
             label = "&CUR_UNDO_V1";
@@ -198,7 +182,6 @@
             bindings = <&kp LC(Z)>;
         };
 
-
         cur_REDO_v1: cur_REDO_v1 {
             label = "&CUR_REDO_V1";
             compatible = "zmk,behavior-macro";
@@ -206,14 +189,12 @@
             bindings = <&kp LC(Y)>;
         };
 
-
         cur_SELECT_ALL_v1: cur_SELECT_ALL_v1 {
             label = "&CUR_SELECT_ALL_V1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(A)>;
         };
-
 
         cur_SELECT_WORD_v1: cur_SELECT_WORD_v1 {
             label = "&CUR_SELECT_WORD_V1";
@@ -224,7 +205,6 @@
             bindings = <&kp LC(LEFT) &kp LC(LS(RIGHT))>;
         };
 
-
         cur_SELECT_LINE_v1: cur_SELECT_LINE_v1 {
             label = "&CUR_SELECT_LINE_V1";
             compatible = "zmk,behavior-macro";
@@ -233,7 +213,6 @@
             wait-ms = <1>;
             bindings = <&kp HOME &kp LS(END)>;
         };
-
 
         cur_EXTEND_WORD_v1: cur_EXTEND_WORD_v1 {
             label = "&CUR_EXTEND_WORD_V1";
@@ -244,7 +223,6 @@
             bindings = <&kp LC(LS(RIGHT))>;
         };
 
-
         cur_EXTEND_LINE_v1: cur_EXTEND_LINE_v1 {
             label = "&CUR_EXTEND_LINE_V1";
             compatible = "zmk,behavior-macro";
@@ -254,14 +232,12 @@
             bindings = <&kp LS(END)>;
         };
 
-
         cur_FIND_v1: cur_FIND_v1 {
             label = "&CUR_FIND_V1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(F)>;
         };
-
 
         cur_FNEXT_v1: cur_FNEXT_v1 {
             label = "&CUR_FNEXT_V1";
@@ -270,14 +246,12 @@
             bindings = <&kp LC(G)>;
         };
 
-
         cur_FPREV_v1: cur_FPREV_v1 {
             label = "&CUR_FPREV_V1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LC(G))>;
         };
-
 
         battery_check: battery_check {
             label = "BATTERY_CHECK";
@@ -295,26 +269,26 @@
 
         alpha_layer {
             bindings = <
-&trans      &trans                         &trans                        &trans                          &trans                           &trans                                  &trans         &trans                                 &trans                           &trans                         &trans                             &trans
-&kp GRAVE   &kp N1                         &kp N2                        &kp N3                          &kp N4                           &kp N5                                  &kp N6         &kp N7                                 &kp N8                           &kp N9                         &kp N0                             &kp MINUS
-&kp TAB     &kp Q                          &kp W                         &kp E                           &kp R                            &kp T                                   &kp Y          &kp U                                  &kp I                            &kp O                          &kp P                              &kp BSLH
-&kp ESCAPE  &HRM_left_pinky_v1 LGUI A  &HRM_left_ring_v1 LALT S  &HRM_left_middy_v1 LCTRL D  &HRM_left_index_v1 LSHIFT F  &kp G                                   &kp H          &HRM_right_index_v1 RIGHT_SHIFT J  &HRM_right_middy_v1 RCTRL K  &HRM_right_ring_v1 RALT L  &HRM_right_pinky_v1 RGUI SEMI  &kp SQT
-&kp LSHFT   &kp Z                          &kp X                         &kp C                           &kp V                            &kp B                                   &kp N          &kp M                                  &kp COMMA                        &kp DOT                        &kp FSLH                           &kp RSHFT
-                                           &kp LEFT                      &kp RIGHT                                                                                                                                                      &kp DOWN                         &kp UP
-                                                                                                         &kp LEFT_SHIFT                   &kp LCTRL               &kp LEFT_ALT    &kp RIGHT_ALT  &kp RIGHT_CONTROL                      &kp RIGHT_SHIFT
-                                                                                                         &thumb_v1 1 BACKSPACE        &thumb_v1 2 DELETE  &mo 3           &mo 3          &thumb_v1 5 ENTER                  &space_v1 1 SPACE
+&trans      &trans                     &trans                    &trans                      &trans                       &trans                              &trans         &trans                             &trans                       &trans                     &trans                         &trans
+&kp GRAVE   &kp N1                     &kp N2                    &kp N3                      &kp N4                       &kp N5                              &kp N6         &kp N7                             &kp N8                       &kp N9                     &kp N0                         &kp MINUS
+&kp TAB     &kp Q                      &kp W                     &kp E                       &kp R                        &kp T                               &kp Y          &kp U                              &kp I                        &kp O                      &kp P                          &kp BSLH
+&kp ESCAPE  &HRM_left_pinky_v1 LGUI A  &HRM_left_ring_v1 LALT S  &HRM_left_middy_v1 LCTRL D  &HRM_left_index_v1 LSHIFT F  &kp G                               &kp H          &HRM_right_index_v1 RIGHT_SHIFT J  &HRM_right_middy_v1 RCTRL K  &HRM_right_ring_v1 RALT L  &HRM_right_pinky_v1 RGUI SEMI  &kp SQT
+&kp LSHFT   &kp Z                      &kp X                     &kp C                       &kp V                        &kp B                               &kp N          &kp M                              &kp COMMA                    &kp DOT                    &kp FSLH                       &kp RSHFT
+                                       &kp LEFT                  &kp RIGHT                                                                                                                                      &kp DOWN                     &kp UP
+                                                                                             &kp LEFT_SHIFT               &kp LCTRL           &kp LEFT_ALT    &kp RIGHT_ALT  &kp RIGHT_CONTROL                  &kp RIGHT_SHIFT
+                                                                                             &thumb_v1 1 BACKSPACE        &thumb_v1 2 DELETE  &mo 3           &mo 3          &thumb_v1 5 ENTER                  &space_v1 1 SPACE
             >;
         };
 
         symbol_layer {
             bindings = <
-&trans     &trans         &trans     &trans     &trans           &trans                    &trans             &trans                   &trans                   &trans                  &trans  &trans
-&kp GRAVE  &kp AMPERSAND  &kp LPAR   &kp RPAR   &kp PLUS         &kp BSLH                  &cur_CUT_v1    &kp BSPC                 &cur_UNDO_v1         &cur_REDO_v1        &trans  &trans
+&trans     &trans         &trans     &trans     &trans           &trans                    &trans         &trans               &trans               &trans              &trans  &trans
+&kp GRAVE  &kp AMPERSAND  &kp LPAR   &kp RPAR   &kp PLUS         &kp BSLH                  &cur_CUT_v1    &kp BSPC             &cur_UNDO_v1         &cur_REDO_v1        &trans  &trans
 &kp EXCL   &kp LBRC       &kp LBKT   &kp RBKT   &kp RBRC         &kp ASTRK                 &cur_COPY_v1   &cur_SELECT_WORD_v1  &cur_SELECT_LINE_v1  &cur_SELECT_ALL_v1  &trans  &trans
-&kp HASH   &kp CARET      &kp EQUAL  &kp UNDER  &kp DLLR         &kp QMARK                 &kp LEFT           &kp DOWN                 &kp UP                   &kp RIGHT               &trans  &trans
+&kp HASH   &kp CARET      &kp EQUAL  &kp UNDER  &kp DLLR         &kp QMARK                 &kp LEFT       &kp DOWN             &kp UP               &kp RIGHT           &trans  &trans
 &kp TILDE  &kp LT         &kp PIPE   &kp MINUS  &kp GT           &kp PLUS                  &cur_PASTE_v1  &cur_EXTEND_WORD_v1  &cur_EXTEND_LINE_v1  &cur_FIND_v1        &trans  &trans
-                          &trans     &trans                                                                                            &trans                   &trans
-                                                &kp NON_US_BSLH  &kp DOT    &trans         &trans             &trans                   &trans
+                          &trans     &trans                                                                                    &trans               &trans
+                                                &kp NON_US_BSLH  &kp DOT    &trans         &trans         &trans               &trans
                                                 &kp PRCNT        &kp COLON  &kp AT_SIGN    &cur_FNEXT_v1  &cur_FPREV_v1        &trans
             >;
         };
@@ -360,14 +334,14 @@
 
         media_layer {
             bindings = <
-&trans  &trans  &trans          &trans            &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans            &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans            &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans            &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                &trans          &trans                                                          &trans  &trans
-                                                  &trans      &trans  &trans    &trans  &trans  &trans
-                                                  &trans      &trans  &trans    &trans  &trans  &trans
+&kp C_SLEEP  &trans  &trans          &trans             &trans             &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&kp K_LOCK   &trans  &trans          &trans             &trans             &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_DOWN  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT         &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &trans          &trans             &trans             &trans            &trans  &trans  &trans  &trans  &trans  &trans
+                     &trans          &trans                                                                  &trans  &trans
+                                                        &trans             &trans  &trans    &trans  &trans  &trans
+                                                        &trans             &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -386,13 +360,11 @@
     };
 };
 
-
 &trackball_central_listener {
     input-processors =
         <&zip_xy_scaler 1 16>,
         <&zip_xy_to_scroll_mapper>,
         <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
 };
-
 
 &trackball_peripheral_listener { input-processors = <&zip_temp_layer 4 500>; };

@@ -334,14 +334,14 @@
 
         media_layer {
             bindings = <
-&kp C_SLEEP  &trans  &trans          &trans             &trans             &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&kp K_LOCK   &trans  &trans          &trans             &trans             &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_DOWN  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT         &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans          &trans             &trans             &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                     &trans          &trans                                                                  &trans  &trans
-                                                        &trans             &trans  &trans    &trans  &trans  &trans
-                                                        &trans             &trans  &trans    &trans  &trans  &trans
+&kp C_SLEEP        &trans  &trans          &trans             &trans           &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&kp K_SCREENSAVER  &trans  &trans          &trans             &trans           &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &trans  &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &trans  &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT       &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &trans  &trans          &trans             &trans           &trans            &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans          &trans                                                                &trans  &trans
+                                                              &trans           &trans  &trans    &trans  &trans  &trans
+                                                              &trans           &trans  &trans    &trans  &trans  &trans
             >;
         };
 

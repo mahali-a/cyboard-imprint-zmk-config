@@ -310,8 +310,8 @@
             bindings = <
 &trans     &trans         &trans     &trans     &trans           &trans                    &trans             &trans                   &trans                   &trans                  &trans  &trans
 &kp GRAVE  &kp AMPERSAND  &kp LPAR   &kp RPAR   &kp PLUS         &kp BSLH                  &cur_CUT_v1    &kp BSPC                 &cur_UNDO_v1         &cur_REDO_v1        &trans  &trans
-&kp HASH   &kp CARET      &kp EQUAL  &kp UNDER  &kp DLLR         &kp ASTRK                 &cur_COPY_v1   &cur_SELECT_WORD_v1  &cur_SELECT_LINE_v1  &cur_SELECT_ALL_v1  &trans  &trans
-&kp EXCL   &kp LBRC       &kp LBKT   &kp RBKT   &kp RBRC         &kp QMARK                 &kp LEFT           &kp DOWN                 &kp UP                   &kp RIGHT               &trans  &trans
+&kp EXCL   &kp LBRC       &kp LBKT   &kp RBKT   &kp RBRC         &kp ASTRK                 &cur_COPY_v1   &cur_SELECT_WORD_v1  &cur_SELECT_LINE_v1  &cur_SELECT_ALL_v1  &trans  &trans
+&kp HASH   &kp CARET      &kp EQUAL  &kp UNDER  &kp DLLR         &kp QMARK                 &kp LEFT           &kp DOWN                 &kp UP                   &kp RIGHT               &trans  &trans
 &kp TILDE  &kp LT         &kp PIPE   &kp MINUS  &kp GT           &kp PLUS                  &cur_PASTE_v1  &cur_EXTEND_WORD_v1  &cur_EXTEND_LINE_v1  &cur_FIND_v1        &trans  &trans
                           &trans     &trans                                                                                            &trans                   &trans
                                                 &kp NON_US_BSLH  &kp DOT    &trans         &trans             &trans                   &trans

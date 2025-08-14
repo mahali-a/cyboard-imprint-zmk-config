@@ -283,8 +283,8 @@
         symbol_layer {
             bindings = <
 &trans     &trans     &trans     &trans     &trans     &trans                    &trans             &trans                   &trans                   &trans                  &trans  &trans
-&kp GRAVE  &kp RBKT   &kp LPAR   &kp RPAR   &kp COMMA  &kp PLUS                  &cur_CUT_v1    &kp BSPC                 &cur_UNDO_v1         &cur_REDO_v1        &trans  &trans
-&kp LBKT   &kp EXCL   &kp LBRC   &kp RBRC   &kp SEMI   &kp QMARK                 &cur_COPY_v1   &cur_SELECT_WORD_v1  &cur_SELECT_LINE_v1  &cur_SELECT_ALL_v1  &trans  &trans
+&kp GRAVE  &kp LBKT   &kp LPAR   &kp RPAR   &kp RBKT   &kp PLUS                  &cur_CUT_v1    &kp BSPC                 &cur_UNDO_v1         &cur_REDO_v1        &trans  &trans
+&kp COMMA  &kp EXCL   &kp LBRC   &kp RBRC   &kp SEMI   &kp QMARK                 &cur_COPY_v1   &cur_SELECT_WORD_v1  &cur_SELECT_LINE_v1  &cur_SELECT_ALL_v1  &trans  &trans
 &kp HASH   &kp CARET  &kp EQUAL  &kp UNDER  &kp DLLR   &kp ASTRK                 &kp LEFT           &kp DOWN                 &kp UP                   &kp RIGHT               &trans  &trans
 &kp TILDE  &kp LT     &kp PIPE   &kp MINUS  &kp GT     &kp FSLH                  &cur_PASTE_v1  &cur_EXTEND_WORD_v1  &cur_EXTEND_LINE_v1  &cur_FIND_v1        &trans  &trans
                           &kp AMPS   &kp SQT                                                                                           &trans                   &trans

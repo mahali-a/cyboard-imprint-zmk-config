@@ -47,7 +47,7 @@
         HRM_left_pinky_v1: HRM_left_pinky_v1 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <260>;
+            tapping-term-ms = <210>;
             bindings = <&kp>, <&kp>;
 
             flavor = "tap-preferred";
@@ -60,7 +60,7 @@
         HRM_left_ring_v1: HRM_left_ring_v1 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <240>;
+            tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
 
             flavor = "tap-preferred";
@@ -99,7 +99,7 @@
         HRM_right_pinky_v1: HRM_right_pinky_v1 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <260>;
+            tapping-term-ms = <210>;
             bindings = <&kp>, <&kp>;
 
             flavor = "tap-preferred";
@@ -112,7 +112,7 @@
         HRM_right_ring_v1: HRM_right_ring_v1 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <240>;
+            tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
 
             flavor = "tap-preferred";
@@ -282,14 +282,14 @@
 
         symbol_layer {
             bindings = <
-&trans     &trans     &trans     &trans     &trans     &trans                    &trans             &trans                   &trans                   &trans                  &trans  &trans
-&kp GRAVE  &kp LBKT   &kp LPAR   &kp RPAR   &kp RBKT   &kp PLUS                  &cur_CUT_v1    &kp BSPC                 &cur_UNDO_v1         &cur_REDO_v1        &trans  &trans
-&kp COMMA  &kp EXCL   &kp LBRC   &kp RBRC   &kp SEMI   &kp QMARK                 &cur_COPY_v1   &cur_SELECT_WORD_v1  &cur_SELECT_LINE_v1  &cur_SELECT_ALL_v1  &trans  &trans
-&kp HASH   &kp CARET  &kp EQUAL  &kp UNDER  &kp DLLR   &kp ASTRK                 &kp LEFT           &kp DOWN                 &kp UP                   &kp RIGHT               &trans  &trans
-&kp TILDE  &kp LT     &kp PIPE   &kp MINUS  &kp GT     &kp FSLH                  &cur_PASTE_v1  &cur_EXTEND_WORD_v1  &cur_EXTEND_LINE_v1  &cur_FIND_v1        &trans  &trans
-                          &kp AMPS   &kp SQT                                                                                           &trans                   &trans
-                                                                &kp NON_US_BSLH  &kp DOT       &trans         &trans         &trans               &trans
-                                                                &kp PRCNT        &kp COLON     &kp AT_SIGN    &cur_FNEXT_v1  &cur_FPREV_v1        &trans
+&trans     &trans     &trans     &trans     &trans           &trans                    &trans         &trans               &trans               &trans              &trans  &trans
+&kp GRAVE  &kp LBKT   &kp LPAR   &kp RPAR   &kp RBKT         &kp PLUS                  &cur_CUT_v1    &kp BSPC             &cur_UNDO_v1         &cur_REDO_v1        &trans  &trans
+&kp COMMA  &kp EXCL   &kp LBRC   &kp RBRC   &kp SEMI         &kp QMARK                 &cur_COPY_v1   &cur_SELECT_WORD_v1  &cur_SELECT_LINE_v1  &cur_SELECT_ALL_v1  &trans  &trans
+&kp HASH   &kp CARET  &kp EQUAL  &kp UNDER  &kp DLLR         &kp ASTRK                 &kp LEFT       &kp DOWN             &kp UP               &kp RIGHT           &trans  &trans
+&kp TILDE  &kp LT     &kp PIPE   &kp MINUS  &kp GT           &kp FSLH                  &cur_PASTE_v1  &cur_EXTEND_WORD_v1  &cur_EXTEND_LINE_v1  &cur_FIND_v1        &trans  &trans
+                      &kp AMPS   &kp SQT                                                                                   &trans               &trans
+                                            &kp NON_US_BSLH  &kp DOT    &trans         &trans         &trans               &trans
+                                            &kp PRCNT        &kp COLON  &kp AT_SIGN    &cur_FNEXT_v1  &cur_FPREV_v1        &trans
             >;
         };
 
@@ -309,7 +309,7 @@
         system_layer {
             bindings = <
 &trans           &trans           &trans           &trans           &trans        &trans                        &trans           &trans           &trans           &trans           &trans           &trans
-&bt BT_CLR       &to 0            &to 1            &to 2            &to 3         &to 4                         &to 5            &to 6            &battery_check   &trans           &trans           &trans
+&bt BT_CLR       &to 0            &to 1            &to 2            &to 3         &to 4                         &to 5            &to 0            &battery_check   &trans           &trans           &trans
 &trans           &trans           &trans           &trans           &trans        &trans                        &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD
 &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans        &trans                        &trans           &trans           &trans           &trans           &trans           &trans
 &bootloader      &trans           &trans           &trans           &trans        &sys_reset                    &sys_reset       &trans           &trans           &trans           &trans           &bootloader
@@ -342,19 +342,6 @@
                            &trans          &trans                                                                &trans  &trans
                                                               &trans           &trans  &trans    &trans  &trans  &trans
                                                               &trans           &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        typing_layer {
-            bindings = <
-&trans     &trans  &trans    &trans     &trans     &trans              &trans  &trans    &trans     &trans   &trans    &trans
-&kp GRAVE  &kp N1  &kp N2    &kp N3     &kp N4     &kp N5              &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB    &kp Q   &kp W     &kp E      &kp R      &kp T               &kp Y   &kp U     &kp I      &kp O    &kp P     &kp BSLH
-&kp ESC    &kp A   &kp S     &kp D      &kp F      &kp G               &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C      &kp V      &kp B               &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                   &kp LEFT  &kp RIGHT                                                   &kp DOWN   &kp UP
-                                        &kp LCTRL  &kp LALT  &trans    &trans  &kp RALT  &kp RCTRL
-                                        &kp BSPC   &kp DEL   &trans    &trans  &kp RET   &kp SPACE
             >;
         };
     };
